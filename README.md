@@ -1,1 +1,3 @@
-# Portable-Temperature-Humidity-Reader
+# Portable Temperature & Humidity Reader
+
+About
