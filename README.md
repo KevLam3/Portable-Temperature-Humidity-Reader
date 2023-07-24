@@ -16,3 +16,4 @@ This is a temperature & humidity reader that can be placed anywhere. This is cur
 - Resistors (10K & 100)
 - LCD1602 Module
 - HC-05 Module
+![Breadboard Layout](https://github.com/KevLam3/Portable-Temperature-Humidity-Reader/blob/ce9bd8a09c75e1156662444f5af1fc81245230f3/images/Temp%20Hum%20Reader_bb.jpg?raw=true "Planned Breadboard Layout")
