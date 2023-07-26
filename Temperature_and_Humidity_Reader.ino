@@ -25,7 +25,7 @@ void setup() {
 }
 
 void loop() {
-  // 
+  // This is for the physical button 
   buttonStateLeft = digitalRead(buttonPinLeft);
   if (buttonStateLeft == HIGH ) {
     // set up the LCD's number of columns and rows and the DHT
@@ -50,21 +50,25 @@ void loop() {
     lcd.clear();
   }
 
-  // 
+  // This is for any digtial input (via Serial Monitor or an app in the future)
   if (Serial.available() > 0)
   {
     dht.begin();
-    Incoming_value = Serial.readString();      //Read the incoming data and store it into variable Incoming_value
+    //Read the incoming data
+    Incoming_value = Serial.readString();      
     Incoming_value.trim();
-    if (Incoming_value == "temp") {           //Checks whether value of Incoming_value is equal to 1
+    //Checks whether value of Incoming_value is equal to "temp"
+    if (Incoming_value == "temp") {     
+      // reading temperature (true = Fahrenheit | false = Celsius)      
       temperature = dht.readTemperature(true);
-      Serial.println("Temperature is ");  //If value is 1 then LED turns ON
+      Serial.println("Temperature is ");  //If true, display the temperature 
       Serial.print(temperature);
     }
-    else if (Incoming_value == "hum")  {    //Checks whether value of Incoming_value is equal to 0
+    //Checks whether value of Incoming_value is equal to "temp"
+    else if (Incoming_value == "hum")  {    
       humidity = dht.readHumidity();
-      Serial.println("Humidity is ");
-      Serial.print(humidity);  //If value is 0 then LED turns OFF
+      Serial.println("Humidity is "); // If true, display the humidity
+      Serial.print(humidity);  
     }
   }
 
