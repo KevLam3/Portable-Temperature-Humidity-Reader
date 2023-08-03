@@ -21,3 +21,6 @@ This is a temperature & humidity reader that can be placed anywhere. This is cur
 
 # Software 
 This code does require a library, which can be found [here](https://www.arduino.cc/reference/en/libraries/dht-sensor-library/).
+
+# Todo List
+- 
