@@ -25,6 +25,6 @@ This code does require a library, which can be found [here](https://www.arduino.
 
 # Todo List
 - Get a wifi module
-- rewire and recode the system
-- build an app/website for the system to display its information
-- build an enclosure for the system
+- Rewire and recode the system
+- Build an app/website for the system to display its information
+- Build an enclosure for the system
