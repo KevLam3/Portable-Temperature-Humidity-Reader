@@ -16,6 +16,8 @@ This is a temperature & humidity reader that can be placed anywhere. This is cur
 - Resistors (10K & 100)
 - LCD1602 Module
 - HC-05 Module
+> This is temporary since it will be replaced with a module that does wifi instead of Bluetooth.
+
 ![Breadboard Layout](https://github.com/KevLam3/Portable-Temperature-Humidity-Reader/blob/ce9bd8a09c75e1156662444f5af1fc81245230f3/images/Temp%20Hum%20Reader_bb.jpg?raw=true "Breadboard Layout")
 > The LCD's resistor can be higher or lower depending on the desired brightness of the screen.
 
@@ -23,4 +25,7 @@ This is a temperature & humidity reader that can be placed anywhere. This is cur
 This code does require a library, which can be found [here](https://www.arduino.cc/reference/en/libraries/dht-sensor-library/).
 
 # Todo List
-- 
+- Get a wifi module
+- rewire and recode the system
+- build an app/website for the system to display its information
+- build an enclosure for the system
